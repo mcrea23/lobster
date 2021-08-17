@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect} from 'react'
+// import Hello from './Hello'
 
-function App() {
+
+const App = () => {
+
+  const [people, setPeople] = useState([])
+
+  const fetchPeople = () => {
+    fetch('https://randomuser.me/api/?results=9')
+    .then(res => res.json())
+    .then(data => setPeople(data.results))
+  }
+
+  useEffect(() => {
+    fetchPeople()
+  }, [])
+
+  console.log(people)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {people && people.map(person => {
+        <li> {person.name.first} </li>
+      })}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+ 
