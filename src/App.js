@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react'
-// import Hello from './Hello'
 
 
 const App = () => {
@@ -20,9 +19,10 @@ const App = () => {
 
   return (
     <div>
-      {people && people.map(person => {
+      {people && people.map(person => (
         <li> {person.name.first} </li>
-      })}
+      ))}
+      <h1> Test </h1>
     </div>
   )
 }
