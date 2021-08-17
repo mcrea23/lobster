@@ -19,10 +19,7 @@ const App = () => {
 
   return (
     <div>
-      {people && people.map(person => (
-        <li> {person.name.first} </li>
-      ))}
-      <h1> Test </h1>
+      <People />
     </div>
   )
 }
