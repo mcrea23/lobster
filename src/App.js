@@ -1,4 +1,6 @@
 import React, { useState, useEffect} from 'react'
+import People from './People'
+
 
 
 const App = () => {
@@ -19,11 +21,9 @@ const App = () => {
 
   return (
     <div>
-      <People />
+      <People people={people}/>
     </div>
   )
 }
 
 export default App
-
- 
