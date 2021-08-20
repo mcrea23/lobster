@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react'
 import People from './People'
+ import Stylesheet from './Stylesheet'
 
 
 
@@ -20,7 +21,8 @@ const App = () => {
   console.log(people)
 
   return (
-    <div>
+    <div className='App'>
+      <Stylesheet />
       <People people={people}/>
     </div>
   )
