@@ -11,7 +11,6 @@ const Person = ({person}) => {
   const handleShow = () => setShow(true);
   
   return (
-    <div className="container"> 
         <div className="box"> 
           <img src={person.picture.medium} alt=""></img>
           <h3 className="style1">
@@ -27,7 +26,6 @@ const Person = ({person}) => {
           { show ? <Modal person = {person} close = {handleClose} /> : null }
           
         </div>
-    </div>
 
 )
 

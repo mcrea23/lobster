@@ -21,7 +21,7 @@ const People = () => {
   
   
   return (
-    <div>
+    <div className="container">
       {mapPeople()}
     </div>
   )
