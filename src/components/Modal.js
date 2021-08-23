@@ -1,26 +1,34 @@
 import React from 'react'
 
-const Modal = ({person}) => {
+const Modal = (props) => {
   return (
+
     <div className="modal-wrapper">
       <div className="modal-header">
-      <img src={person.picture.thumbnail} alt="Avatar"></img>
-      <span className="close-modal-btn">x</span>
+      <img src=
+      {props.person.picture.thumbnail} alt="Avatar">
+      </img>
+      <span onClick={ () => props.close()} className="close-modal-btn"> x 
+      </span>
     </div>
-      <div className="modal-content">
-        <div className="modal-body">
-        <h4> {person.name.first} {person.name.last}  </h4>
-      <p> 
-      {person.dob.age} <br/><br/>
-      Mobile: {person.cell}<br/>
-      Email: {person.email} 
-      </p>
+    <div className="modal-content">
+      <div className="modal-body">
+        <h4> 
+          {props.person.name.first} 
+          {props.person.name.last}  
+        </h4>
+        <p> 
+        {props.person.dob.age} <br/><br/>
+        Mobile: {props.person.cell}<br/>
+        Email: {props.person.email} 
+        </p>
       <div className="modal-footer">
-        <button className="btn-cancel"> Close </button>
+        <button onClick={ () => props.close()} className="btn-cancel"> Close 
+        </button>
       </div>
     </div>
   </div>
-  </div>
+</div>
   )
 }
 

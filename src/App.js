@@ -1,15 +1,12 @@
 import React from 'react'
+import Header from './components/Header'
 import People from './components/People'
-import { useState } from 'react'
-
 
 const App = () => {
-  const [show, setShow] = useState(false);
-
-  const closeModal = () => setShow(false);
   
   return (
     <div>
+      <Header/>
       <People />
     </div>
   )
