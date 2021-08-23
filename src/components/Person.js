@@ -14,11 +14,9 @@ const Person = ({person}) => {
         <div className="box"> 
           <img src={person.picture.medium} alt=""></img>
           <h3 className="style1">
-            {person.name.first} 
-            {person.name.last} </h3>
+            {person.name.first} {person.name.last} </h3>
           <h3 className="style2"> 
-            {person.location.city}, 
-            {person.location.state} </h3>
+            {person.location.city}, {person.location.state} </h3>
           <button onClick={() => handleShow()} className="modal-button"> 
           Learn More 
           </button> 
