@@ -42,10 +42,7 @@ h3.style2{
   box-sizing:border-box;
   transition:0.4s;
 }
-.back p{
-  padding:60px 0px;;
-  line-height:27px;
-}
+
 
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
