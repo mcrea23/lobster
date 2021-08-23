@@ -1,15 +1,15 @@
 import React from 'react'
 import './Header.css'
-import Lob from './images/Lob.jpeg'
+import lobster from './images/lobster.png'
 
-const pic = Lob
+const pic = lobster
 
 const Header = () => {
   return (
 
       <header>
           <h1> <img src= {pic} alt=""/> </h1>
-          <h2> LOBSTER MARKETING DEV TEST </h2>
+          <h4> LOBSTER MARKETING DEV TEST </h4>
   
       </header>
 
