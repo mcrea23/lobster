@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react'
 import { Person } from './Person'
+// import contactCards from './contactCards.css'
 
 
 export const People = () => {

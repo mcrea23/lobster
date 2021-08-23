@@ -28,6 +28,25 @@ h3.style2{
   position:relative;
 }
 
+.profile-card .back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:380px;
+  left:0;
+  background:#000000;
+  color:rgb(0, 0, 0);
+  border-top-left-radius:55px;
+  border-top-right-radius:55px;
+  padding:10px;
+  box-sizing:border-box;
+  transition:0.4s;
+}
+.back p{
+  padding:60px 0px;;
+  line-height:27px;
+}
+
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
   border-radius: 100px;
@@ -47,9 +66,65 @@ img {
   width:200px;
   margin:0px auto;
   text-align:center;
+  flex-direction: column;
 }
 
-button {
+/* button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: teal;
+  background-color: white;
+  text-align: center;
+  cursor: pointer; 
+  width: 100%;
+  font-size: 12px;
+} */
+
+.modal-wrapper {
+  background: white;
+  width: 60%;
+  max-width: 600px;
+  margin: 4rem auto;
+}
+
+.modal-header {
+  background: white;
+  color: rgb(84, 182, 182);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-content {
+  padding: 1.5rem 1rem;
+}
+
+.modal-body {
+  margin-bottom: 1rem;
+}
+
+.modal-body h4 {
+  color:rgb(84, 182, 182);
+  font-size: 1.2rem;
+}
+
+.modal-body p {
+font-size: 1rem;
+padding: 1rem;
+display: flex;
+white-space: pre-wrap;
+}
+
+.modal-footer button {
+  display: block;
+  font-size: 0.8rem; 
+  padding: 0.5rem 1.8rem;
+}
+
+.modal-button {
   border: none;
   outline: 0;
   display: inline-block;
