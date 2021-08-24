@@ -3,7 +3,7 @@ import './contactCard.css'
 
 const Modal = (props) => {
   return (
-
+    <div className="modal-container">
     <div className="modal-wrapper">
       <div className="modal-header">
       <img src=
@@ -15,8 +15,7 @@ const Modal = (props) => {
     <div className="modal-content">
       <div className="modal-body">
         <h4> 
-          {props.person.name.first} 
-          {props.person.name.last}  
+          {props.person.name.first}  {props.person.name.last}  
         </h4>
         <p> 
         {props.person.dob.age} <br/><br/>
@@ -29,6 +28,7 @@ const Modal = (props) => {
       </div>
     </div>
   </div>
+</div>
 </div>
   )
 }

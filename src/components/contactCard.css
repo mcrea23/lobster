@@ -45,8 +45,12 @@ h3.style2{
 img {
   border-radius: 100px;
   margin-top: 10px;
-  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
+
 
 .modal-container {
   display: flex;
@@ -74,7 +78,6 @@ img {
   margin-top: 0;
   background: white;
   color: rgb(84, 182, 182);
-  text-align: center;
 }
 
 .modal-content {
@@ -94,8 +97,9 @@ img {
 .modal-body p {
 font-size: 1rem;
 padding: 1rem;
-display: flex;
+display: block;
 white-space: pre-wrap;
+text-align: center;
 }
 
 .modal-footer button {
@@ -137,3 +141,4 @@ white-space: pre-wrap;
   max-height: 400px;
   overflow: auto;
 }
+

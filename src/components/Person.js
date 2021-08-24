@@ -12,7 +12,7 @@ const Person = ({person}) => {
   
   return (
         <div className="box"> 
-          <img src={person.picture.medium} alt=""></img>
+          <img src={person.picture.medium} alt="pic" className="center"></img>
           <h3 className="style1">
             {person.name.first} {person.name.last} </h3>
           <h3 className="style2"> 

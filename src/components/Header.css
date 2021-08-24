@@ -24,8 +24,7 @@ h4 {
     border-bottom: 3px solid rgb(136, 136, 136);
 }
 
-img {
-	font-family: 'Roboto';
-	font-size: 10px;
-	margin-bottom: 1px;
+.Lob {
+  width: 800px;
+  height: auto;
 }
